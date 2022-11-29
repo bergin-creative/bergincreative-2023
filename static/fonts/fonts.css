@@ -1,0 +1,13 @@
+/* ===========================================================================
+// ==== INCLUDED FONTS
+// ======================================================================== */
+
+/* Add the font files to this same directory */
+
+@font-face {
+  font-family: 'LaTortuga-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('LaTortuga-Regular.woff2') format('woff2'),
+    url('LaTortuga-Regular.woff') format('woff');
+}
