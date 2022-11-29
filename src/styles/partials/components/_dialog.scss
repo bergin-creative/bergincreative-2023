@@ -1,15 +1,15 @@
 .modal {
   background-color: $color-grey-1;
   max-width: 40rem;
-  padding: $space-600;
+  padding: $space-60;
   position: relative;
   width: 100%;
 
   &__close {
     height: 18px;
     position: absolute;
-    right: $space-500;
-    top: $space-500;
+    right: $space-50;
+    top: $space-50;
     width: 18px;
   }
 

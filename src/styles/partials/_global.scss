@@ -12,7 +12,7 @@ footer {
   p,
   ul,
   ol {
-    margin-bottom: $space-500;
+    margin-bottom: $space-50;
 
     &:last-child {
       margin-bottom: 0;
@@ -25,12 +25,12 @@ footer {
 
   ul.aligned-list {
     list-style: disc;
-    margin-left: $space-300;
+    margin-left: $space-30;
 
     li {
-      margin-bottom: $space-300;
-      padding-left: $space-500;
-      text-indent: -$space-500;
+      margin-bottom: $space-30;
+      padding-left: $space-50;
+      text-indent: -$space-50;
     }
   }
 
@@ -51,7 +51,7 @@ h1,
 .h1,
 h2,
 .h2 {
-  margin-bottom: $space-300;
+  margin-bottom: $space-30;
 }
 
 h3,
@@ -82,7 +82,7 @@ small {
 }
 
 figure {
-  margin: 0 $space-500;
+  margin: 0 $space-50;
 }
 
 .iframe-container {
@@ -110,7 +110,7 @@ figure {
 }
 
 table {
-  margin-bottom: $space-500;
+  margin-bottom: $space-50;
 }
 
 tr {
@@ -121,23 +121,23 @@ tr {
 
 th {
   border-bottom: 1px solid $highlight-clr;
-  padding: $space-300;
+  padding: $space-30;
   padding-bottom: 0;
   text-align: left;
 }
 
 td {
-  padding: $space-300;
+  padding: $space-30;
 }
 
 .container {
-  padding: 0 $space-300;
+  padding: 0 $space-30;
   margin-left: auto;
   margin-right: auto;
   max-width: $container-width;
   width: 100%;
 
-  @include mq($L) {
+  @include mq($XXL) {
     max-width: ($container-width * 1.5);
     padding: 0;
   }

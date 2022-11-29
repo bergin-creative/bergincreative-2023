@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `ROOT SITE TITLE`,
-    description: `SITE META DESCRIPTION GOES HERE.`,
-    siteUrl: `https://mikeriley.dev`,
-    socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
-    author: `TWITTER HANDLE`,
+    title: `Bergin Creative`,
+    description: `Like minds love design with meaning, creativity, and heart that makes an impact. Let Bergin Creative help with any of your design needs, including identity, print, and web.`,
+    siteUrl: `https://bergincreative.com/`,
+    socialImage: `/bergin-creative-logo-square.jpg`,
+    author: '@JosephineBergin',
   },
   plugins: [
     `gatsby-plugin-remove-trailing-slashes`,
@@ -35,13 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ROOT SITE TITLE`,
-        short_name: `SHORT VERSION OF ROOT SITE TITLE`,
+        name: `Bergin Creative`,
+        short_name: `Bergin Creative`,
         start_url: `/`,
-        background_color: `HEX VALUE`,
-        theme_color: `HEX VALUE`,
+        background_color: `#73cbd3`,
+        theme_color: `#dc3a0f`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon-216x216.png`, // This path is relative to the root of the site.
       },
     },
     {
