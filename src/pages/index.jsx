@@ -55,11 +55,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">NAEA</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Membership magazine
                     </span>
                   </p>
                 </div>
@@ -74,11 +72,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">AAMFT</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Membership magazine
                     </span>
                   </p>
                 </div>
@@ -94,10 +90,10 @@ const IndexPage = () => (
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
                     <span className="homepage__grid-label-title">
-                      Roland Park Country School
+                      The Pingry School
                     </span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Alumni magazine
                     </span>
                   </p>
                 </div>
@@ -116,7 +112,7 @@ const IndexPage = () => (
                       Roland Park Country School
                     </span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Reports and collateral
                     </span>
                   </p>
                 </div>
@@ -131,11 +127,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">Tronox</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Sustainability report
                     </span>
                   </p>
                 </div>
@@ -150,11 +144,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">Reds</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Mascot
                     </span>
                   </p>
                 </div>
@@ -169,11 +161,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">Lock Hue</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Logo/branding
                     </span>
                   </p>
                 </div>
@@ -188,11 +178,9 @@ const IndexPage = () => (
                 />
                 <div className="homepage__grid-label">
                   <p className="homepage__grid-label-copy">
-                    <span className="homepage__grid-label-title">
-                      Roland Park Country School
-                    </span>
+                    <span className="homepage__grid-label-title">Various</span>
                     <span className="homepage__grid-label-subtitle">
-                      Alumnae magazine
+                      Identity projects
                     </span>
                   </p>
                 </div>
@@ -204,7 +192,7 @@ const IndexPage = () => (
         <p className="homepage__intro">
           I’d love to help you find solutions through graphic design — design
           with meaning, creativity and heart that makes an impact. Read more
-          about me here.
+          about me <Link to="/about">here</Link>.
         </p>
 
         <Button

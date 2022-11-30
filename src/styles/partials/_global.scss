@@ -35,14 +35,14 @@ footer {
   }
 
   a {
-    border-bottom: 1px dashed $link-clr;
+    border-bottom: 1px solid $link-clr;
     color: $link-clr;
-    padding-bottom: 2px;
+    outline: none;
     text-decoration: none;
 
     &:hover,
-    &:active {
-      color: $link-hover-clr;
+    &:focus {
+      border-bottom: 1px dashed $link-clr;
     }
   }
 }

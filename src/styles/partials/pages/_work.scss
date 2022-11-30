@@ -1,0 +1,20 @@
+.work {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $space-70;
+  }
+
+  &__images {
+    &-list {
+      margin-top: $space-50;
+    }
+
+    &-item {
+      &:not(:first-child) {
+        margin-top: $space-50;
+      }
+    }
+  }
+}
