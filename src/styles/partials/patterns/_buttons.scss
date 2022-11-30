@@ -2,11 +2,11 @@
 
 .button {
   background-color: transparent;
-  border: 1px solid $color-grey-2;
-  border-radius: 25px;
-  color: $color-grey-2;
+  border: 2px solid $black;
+  color: $black;
+  font-family: $font-black;
   line-height: 1;
-  padding: math.div($space, 1.5) $space * 1.5;
+  padding: $space-20 $space-50;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out,
@@ -14,51 +14,51 @@
 
   &:focus,
   &:hover {
-    background-color: $color-grey-2;
-    color: $color-grey-1;
+    background-color: $black;
+    color: $white;
 
     .button__icon {
-      fill: $color-grey-1;
+      fill: $white;
     }
   }
 
   &--reversed {
-    border-color: $color-grey-1;
-    color: $color-grey-1;
+    border-color: $black;
+    color: $black;
 
     &:focus,
     &:hover {
-      background-color: $color-grey-1;
-      color: $color-grey-2;
+      background-color: $black;
+      color: $white;
     }
   }
 
   &--solid {
-    background-color: $color-grey-1;
-    color: $color-grey-2;
+    background-color: $white;
+    color: $black;
 
     &:focus,
     &:hover {
-      background-color: $color-grey-2;
-      color: $color-grey-1;
+      background-color: $black;
+      color: $white;
     }
 
     &.button--reversed {
-      background-color: $color-grey-2;
-      color: $color-grey-1;
+      background-color: $black;
+      color: $white;
 
       &:focus,
       &:hover {
-        background-color: $color-grey-1;
-        border-color: $color-grey-2;
-        color: $color-grey-2;
+        background-color: $white;
+        border-color: $black;
+        color: $black;
       }
     }
   }
 
   span {
     display: inline-block;
-    transform: translateY(2px);
+    transform: translateY(-1px);
   }
 
   &__icon {

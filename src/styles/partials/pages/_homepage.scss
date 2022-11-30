@@ -1,11 +1,83 @@
 .homepage {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $space-50;
+  }
+
   &__header {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: $space-50;
 
     > * {
       text-align: center;
     }
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__grid {
+    width: 100%;
+
+    &-list {
+      display: grid;
+      gap: $space-50;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    }
+
+    &-item {
+      border: 1px solid $black;
+      transition: opacity 0.2s ease-out;
+    }
+
+    &-link {
+      outline: none;
+
+      &:focus,
+      &:hover {
+        opacity: 0.67;
+      }
+    }
+
+    &-label {
+      background-color: $black;
+      color: $white;
+      margin-top: $space-10;
+      padding-bottom: $space-30;
+      padding-top: $space-20;
+
+      &-copy {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-title {
+        font-family: $font-black;
+        font-size: 1.25rem;
+      }
+
+      &-subtitle {
+        font-family: $font-med;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  &__intro {
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $space-50;
+    text-align: center;
+  }
+
+  &__cta {
   }
 }

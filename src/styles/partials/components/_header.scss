@@ -24,12 +24,27 @@
         padding-left: $space-30;
       }
     }
+
+    &:last-child {
+      .nav__link {
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
   }
 
   &__link {
     color: $black;
     font-family: $font-black;
     font-size: 1.25rem;
+    outline: none;
     text-decoration: none;
+    transition: border 0.2s ease-out;
+
+    &:focus,
+    &:hover {
+      border-bottom: 2px solid $black;
+    }
   }
 }
