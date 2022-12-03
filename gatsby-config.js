@@ -12,6 +12,30 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        url: 'http://54.187.116.75/graphql/',
+        schema: {
+          requestConcurrency: 10,
+          timeout: 180000,
+        },
+        type: {
+          MediaItem: {
+            localFile: {
+              requestConcurrency: 1,
+              maxFileSizeBytes: 100000000,
+            },
+          },
+        },
+        includedRoutes: [
+          '/*/*/menus',
+          '/*/*/homepage',
+          '/*/*/about',
+          '/*/*/contact',
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {

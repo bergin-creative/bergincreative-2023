@@ -11,6 +11,7 @@ export const Button = ({
   isSolid,
   hasIcon,
   onClick,
+  targetBlank,
 }) => {
   if (onClick) {
     return (
@@ -33,6 +34,8 @@ export const Button = ({
         isSolid && 'button--solid'
       } ${classes && classes}`}
       href={ctaUrl}
+      target={targetBlank ? '_blank' : null}
+      rel={targetBlank ? 'noopener noreferrer' : null}
     >
       <span>{ctaText}</span>{' '}
       {hasIcon && <IconExternal className="button__icon" />}
@@ -48,6 +51,7 @@ Button.propTypes = {
   isReversed: PropTypes.bool,
   isSolid: PropTypes.bool,
   onClick: PropTypes.func,
+  targetBlank: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -57,4 +61,5 @@ Button.defaultProps = {
   isReversed: false,
   isSolid: false,
   onClick: null,
+  targetBlank: null,
 };

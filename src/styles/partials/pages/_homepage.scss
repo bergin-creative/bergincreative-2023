@@ -3,7 +3,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: $space-50;
+    margin-bottom: $space-60;
   }
 
   &__header {
@@ -22,7 +22,12 @@
   }
 
   &__grid {
+    max-width: 540px;
     width: 100%;
+
+    @include mq($M) {
+      max-width: none;
+    }
 
     &-list {
       display: grid;
@@ -43,6 +48,10 @@
       &:hover {
         opacity: 0.67;
       }
+    }
+
+    &-image {
+      aspect-ratio: 600/511;
     }
 
     &-label {
