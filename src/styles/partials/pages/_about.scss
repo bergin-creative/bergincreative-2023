@@ -1,0 +1,19 @@
+.about {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.625;
+      max-width: 35rem;
+      text-align: center;
+    }
+
+    img {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+}
