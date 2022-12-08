@@ -23,7 +23,13 @@
 
     a {
       color: $black;
+      outline: none;
       text-decoration: none;
+
+      &:focus,
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
     }
   }
 }
