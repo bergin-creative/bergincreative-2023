@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Bergin Creative`,
+    title: `Josephine Bergin`,
     description: `Like minds love design with meaning, creativity, and heart that makes an impact. Let Bergin Creative help with any of your design needs, including identity, print, and web.`,
     siteUrl: `https://www.josephinebergin.com/`,
     socialImage: `/bergin-creative-logo-square.jpg`,
@@ -53,8 +53,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bergin Creative`,
-        short_name: `Bergin Creative`,
+        name: `Josephine Bergin`,
+        short_name: `Josephine Bergin`,
         start_url: `/`,
         background_color: `#73cbd3`,
         theme_color: `#ffffff`,

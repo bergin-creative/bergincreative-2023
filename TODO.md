@@ -48,8 +48,8 @@
 - overall audit
 - https://sonarwhal.com/scanner
 - google analytics scripts added
-- remove unused boilerplate files and assets (images, icons, fonts, etc.)
-- update gatsby-config file for launch
+- √ remove unused boilerplate files and assets (images, icons, fonts, etc.)
+- √ update gatsby-config file for launch
   - favicon
   - create Open Graph/Twitter Card image (1200px x 1200px)
   - connect to any social media sites
