@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: 'http://54.187.116.75/graphql/',
+        url: 'https://admin.josephinebergin.com/graphql/',
         schema: {
           requestConcurrency: 10,
           timeout: 180000,
