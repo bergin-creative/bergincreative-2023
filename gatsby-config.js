@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bergin Creative`,
     description: `Like minds love design with meaning, creativity, and heart that makes an impact. Let Bergin Creative help with any of your design needs, including identity, print, and web.`,
-    siteUrl: `https://bergincreative.com/`,
+    siteUrl: `https://www.josephinebergin.com/`,
     socialImage: `/bergin-creative-logo-square.jpg`,
     author: '@JosephineBergin',
   },
@@ -10,7 +10,6 @@ module.exports = {
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-source-wordpress',
       options: {
@@ -61,6 +60,50 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/icon-216x216.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
+            nodes {
+              ... on WpPost {
+                uri
+                modifiedGmt
+              }
+              ... on WpPage {
+                uri
+                modifiedGmt
+              }
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => 'https://www.josephinebergin.com/',
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allWpContentNode: { nodes: allWpNodes },
+        }) => {
+          const wpNodeMap = allWpNodes.reduce((acc, node) => {
+            const { uri } = node;
+            acc[uri] = node;
+
+            return acc;
+          }, {});
+
+          return allPages.map((page) => ({ ...page, ...wpNodeMap[page.path] }));
+        },
+        serialize: ({ path, modifiedGmt }) => ({
+          url: path,
+          lastmod: modifiedGmt,
+        }),
       },
     },
     {
