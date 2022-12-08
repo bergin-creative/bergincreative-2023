@@ -73,7 +73,7 @@ module.exports = {
               modifiedGmt
             }
           }
-          workDetailPages {
+          allWpWorkDetailPage {
             nodes {
               uri
               modifiedGmt
