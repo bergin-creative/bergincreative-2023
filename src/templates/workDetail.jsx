@@ -12,12 +12,13 @@ const WorkDetailPage = ({ data, location }) => {
     allWpWorkDetailPage: { nodes },
   } = data;
   const {
+    title,
     workDetail: { heading, images },
   } = nodes[0];
 
   return (
     <Layout location={location}>
-      <SEO title="Connections" />
+      <SEO title={title} />
       <div className="container">
         <div className="work__wrapper">
           <h1
@@ -47,6 +48,7 @@ export const query = graphql`
   query ($id: String!) {
     allWpWorkDetailPage(filter: { id: { eq: $id } }) {
       nodes {
+        title
         workDetail {
           heading
           images {
@@ -66,6 +68,7 @@ WorkDetailPage.propTypes = {
     allWpWorkDetailPage: PropTypes.shape({
       nodes: PropTypes.arrayOf(
         PropTypes.shape({
+          title: PropTypes.string.isRequired,
           workDetail: PropTypes.shape({
             heading: PropTypes.string,
             images: PropTypes.arrayOf(

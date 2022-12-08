@@ -17,7 +17,7 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Connections" />
+      <SEO title="About" />
       <div className="container">
         <h1 className="visuallyhidden">About Me</h1>
         <div
