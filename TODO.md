@@ -35,14 +35,14 @@
 - √ create interior page template(s) used in gatsby-node
 - √ get content from WP API
 - add schema.org metadata
-- custom 404 page or redirect to homepage
+- √ custom 404 page or redirect to homepage
 - create sitemap
   - gatsby-plugin-sitemap
-- cross-browser testing
+- √ cross-browser testing
 - Lighthouse audits
   - accessibility
   - performance
-- manual accessibility audits
+- √ manual accessibility audits
   - interactive elements navigable via keyboard?
     - hidden menus?
 - overall audit

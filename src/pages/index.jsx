@@ -61,7 +61,7 @@ const IndexPage = ({ data, location }) => {
             </ul>
           </div>
 
-          <p
+          <div
             className="homepage__intro"
             dangerouslySetInnerHTML={{ __html: introCopy }}
           />

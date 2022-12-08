@@ -80,11 +80,16 @@
   }
 
   &__intro {
-    font-size: 1.25rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: $space-50;
     margin-top: $space-50;
-    text-align: center;
+
+    p {
+      font-size: 1.25rem;
+
+      text-align: center;
+    }
   }
 
   &__cta {
