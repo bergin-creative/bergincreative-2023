@@ -5833,10 +5833,10 @@ gatsby-source-graphql@^5.2.0:
     invariant "^2.2.4"
     node-fetch "^2.6.7"
 
-gatsby-source-wordpress@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-wordpress/-/gatsby-source-wordpress-7.2.0.tgz#23e483fdc6e2403d2b58dd8ffffde9b3bee4ed74"
-  integrity sha512-Lak/9AXmXnkCn2q1PHovsY8QA4jQ+isN0ZPgwbAp6EfJn5MfFwuFPEn6fZk28PGgP1BlAE8n5UsVRCYVJ5bpDQ==
+gatsby-source-wordpress@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-wordpress/-/gatsby-source-wordpress-7.2.2.tgz#8bb40e79a9054fd8dc7942cd5b7d9e80bbb54ecc"
+  integrity sha512-nokLkZWPRWsKRrTZXA0MLxMRS5qCL6X2wNGPiCsoI3xK73hTt1h+mo8kPPGyOQATokNIxhLZA3MFLl8KijnStg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@rematch/core" "^1.4.0"
