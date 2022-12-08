@@ -63,45 +63,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-        {
-          wpPage {
-            nodes {
-              uri
-              modifiedGmt
-            }
-          }
-          allWpWorkDetailPage {
-            nodes {
-              uri
-              modifiedGmt
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => 'https://www.josephinebergin.com/',
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-          allWpContentNode: { nodes: allWpNodes },
-        }) => {
-          const wpNodeMap = allWpNodes.reduce((acc, node) => {
-            const { uri } = node;
-            acc[uri] = node;
-
-            return acc;
-          }, {});
-
-          return allPages.map((page) => ({ ...page, ...wpNodeMap[page.path] }));
-        },
-        serialize: ({ path, modifiedGmt }) => ({
-          url: path,
-          lastmod: modifiedGmt,
-        }),
-      },
-    },
-    {
       resolve: `gatsby-plugin-accessibilityjs`,
       options: {
         injectStyles: false,

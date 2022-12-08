@@ -42,6 +42,8 @@ const IndexPage = ({ data, location }) => {
                       className="homepage__grid-image"
                       src={gridItem.image.sourceUrl}
                       alt={gridItem.image.altText}
+                      width="600"
+                      height="511"
                     />
                     <div className="homepage__grid-label">
                       <p className="homepage__grid-label-copy">
