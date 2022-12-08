@@ -27,12 +27,6 @@ module.exports = {
             },
           },
         },
-        includedRoutes: [
-          '/*/*/menus',
-          '/*/*/homepage',
-          '/*/*/about',
-          '/*/*/contact',
-        ],
       },
     },
     {
@@ -64,7 +58,7 @@ module.exports = {
         short_name: `Bergin Creative`,
         start_url: `/`,
         background_color: `#73cbd3`,
-        theme_color: `#dc3a0f`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/icon-216x216.png`, // This path is relative to the root of the site.
       },

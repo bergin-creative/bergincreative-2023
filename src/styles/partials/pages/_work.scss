@@ -7,9 +7,17 @@
   }
 
   &__heading {
-    font-family: $font-med;
-    font-size: 1rem;
-    margin-bottom: $space-40;
+    text-align: center;
+
+    h1 {
+      font-family: $font-med;
+      font-size: 1rem;
+      margin-bottom: $space-10;
+    }
+
+    p {
+      margin-bottom: $space-40;
+    }
   }
 
   &__images {

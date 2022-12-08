@@ -21,7 +21,7 @@ const WorkDetailPage = ({ data, location }) => {
       <SEO title={title} />
       <div className="container">
         <div className="work__wrapper">
-          <h1
+          <div
             className="work__heading"
             dangerouslySetInnerHTML={{ __html: heading }}
           />

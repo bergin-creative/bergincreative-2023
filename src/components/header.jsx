@@ -42,6 +42,8 @@ const Header = ({ location }) => (
               className="nav__link"
               href="https://www.instagram.com/josephinebergindesign/"
               aria-label="Josephine Bergin Design on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <IconInstagram />
             </a>
