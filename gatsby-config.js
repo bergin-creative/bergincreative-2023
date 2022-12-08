@@ -67,7 +67,7 @@ module.exports = {
       options: {
         query: `
         {
-          pages {
+          wpPage {
             nodes {
               uri
               modifiedGmt
