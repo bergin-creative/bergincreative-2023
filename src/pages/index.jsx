@@ -19,7 +19,7 @@ const IndexPage = ({ data, location }) => {
   } = edges[0];
   return (
     <Layout location={location}>
-      <SEO />
+      <SEO title="Home" />
       <div className="container">
         <div className="homepage__wrapper">
           <div className="homepage__header">
