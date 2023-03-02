@@ -1,10 +1,9 @@
-# Gatsby Starter
+# josephinebergin.com
 
-A boilerplate for static sites built with Gatsby.\
 Built on [Gatsby.js](https://www.gatsbyjs.org/), a static site generator built with React.js.
 
-- production environment - PROD URL GOES HERE
-- staging environment - STAGE URL GOES HERE
+- production environment - https://josephinebergin.com
+- staging environment - https://benevolent-bombolone-fb259f.netlify.app/
 
 ## Prerequisites
 
